@@ -19,7 +19,7 @@ instalados em sua máquina.
 2. Navegue até a pasta do projeto
 
    ```bash
-   cd br-adriel/login-treinamento
+   cd login-treinamento
    ```
 
 3. Instale as depedências do projeto
