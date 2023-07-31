@@ -1,0 +1,8 @@
+h1 {
+  font-weight: 700;
+  font-size: 3.125rem; /* 50px */
+}
+
+.highlight {
+  color: var(--color-text-highlight);
+}

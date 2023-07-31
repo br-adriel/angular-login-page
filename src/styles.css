@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@600;700&family=Rubik:wght@700&display=swap");
+
+/* CSS reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Estilos globais */
+:root {
+  --color-text: #fff;
+  --color-text-highlight: #c8a585;
+  --color-bg-1: #1f2635;
+  --color-bg-2: #2d3545;
+
+  --font-family-title: "Rubik", sans-serif;
+  --font-family-content: "Exo", sans-serif;
+
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  font-family: var(--font-family-content);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+}
+
+a {
+  display: inline-block;
+  color: var(--color-text-highlight);
+  text-decoration: none;
+  transition: filter 300ms ease-out;
+  font-weight: 600;
+  font-size: 0.6875rem; /* 11px */
+}
+
+a:hover {
+  filter: brightness(1.2);
+}
+
+button,
+input,
+label {
+  font-family: inherit;
+}
+
+button,
+input {
+  border: none;
+  background-color: var(--color-bg-2);
+  color: var(--color-text-highlight);
+  border-radius: 4px;
+}
+
+label,
+input {
+  font-weight: 600;
+  font-size: 0.75rem; /* 12px */
+}
+
+button {
+  cursor: pointer;
+  padding: 9px 69px;
+  transition: all 300ms ease-out;
+  font-weight: 700;
+  font-size: 0.875rem; /* 14px */
+}
+
+button:hover {
+  filter: brightness(1.2);
+  transform: scale(0.99);
+}
+
+input:not([type="checkbox"]):not([type="radio"]) {
+  padding: 15px 16px;
+}
+
+input:focus {
+  outline: 2px solid var(--color-text-highlight);
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 11px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 2px;
+  padding: 15px 16px;
+}
+
+.form-group input:not(:placeholder-shown) + label {
+  display: none;
+}
+
+.container {
+  width: min(1280px, 100%);
+  margin: 0 auto;
+}

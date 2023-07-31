@@ -1,0 +1,8 @@
+<main>
+  <div class="container">
+    <app-welcome-title [username]="typedUsername"></app-welcome-title>
+    <app-login-card
+      (usernameChange)="updateTypedUsername($event)"
+    ></app-login-card>
+  </div>
+</main>

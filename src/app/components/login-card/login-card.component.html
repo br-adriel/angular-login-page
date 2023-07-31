@@ -1,0 +1,38 @@
+<div class="card">
+  <form>
+    <img
+      src="../../../assets/img/rockt_icon.png"
+      alt="Ilustração de foguete decolando"
+    />
+    <div class="form-group">
+      <input
+        type="text"
+        id="inputUsername"
+        placeholder=" "
+        name="inputUsername"
+        [(ngModel)]="loginFormData.username"
+        required
+        #username
+        (input)="emitUsernameChange(username.value)"
+      />
+      <label for="inputUsername">Username</label>
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        id="inputPassword"
+        name="inputPassword"
+        placeholder=" "
+        [(ngModel)]="loginFormData.password"
+        required
+      />
+      <label for="inputPassword">Senha</label>
+    </div>
+    <a href="#">Esqueceu sua senha?</a>
+    <button type="submit">Partir</button>
+  </form>
+  <a href="#">
+    Cadastrar-se
+    <img src="../../../assets/icons/seta.svg" alt="" />
+  </a>
+</div>

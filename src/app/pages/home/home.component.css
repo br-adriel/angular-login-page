@@ -1,0 +1,25 @@
+main {
+  min-height: 100vh;
+  background-image: url("../../../assets/img/image_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+main > .container {
+  min-height: 100vh;
+  padding: 48px 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+@media screen and (min-width: 992px) {
+  main > .container {
+    flex-direction: row;
+    padding: 73px 79px;
+    gap: 94px;
+  }
+}

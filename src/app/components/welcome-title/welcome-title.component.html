@@ -1,0 +1,14 @@
+<ng-template #defaultText>
+  <h1>
+    Comece agora sua jornada no mundo
+    <span class="highlight">dev,</span> faça agora seu login e aproveite nosso
+    curso
+    <span class="highlight">gratuito!</span>
+  </h1>
+</ng-template>
+
+<h1 *ngIf="username; else defaultText">
+  Muito bem
+  <span class="highlight">{{ username }}</span
+  >, agora é só partir para sua viajem pelo aprendizado!
+</h1>
